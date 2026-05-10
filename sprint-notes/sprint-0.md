@@ -27,3 +27,6 @@ Establish project foundations, documentation, and initial architectural directio
 - Implement initial authentication endpoint
 - Add structured logging
 - Create baseline k6 test scripts
+
+## Sprint Adjustment
+- Add initial frontend authentication UI tasks after API contract completion
