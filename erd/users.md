@@ -2,8 +2,8 @@
 
 ```mermaid
 erDiagram
-    CUSTOMER
-    CUSTOMER {
+    USER
+    USER {
         uuid id PK
         string email UK
         string username
