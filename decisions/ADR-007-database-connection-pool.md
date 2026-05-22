@@ -61,12 +61,15 @@ Showing nodes accounting for 17.73s, 5.09% of 348.37s total
 
 Result table of profiling that have been done:
 
-| Pool  | Throughput | p95  | p99   |
-|-------|------------|------|-------|
-| 1/1   | 4.5k rps   | 96ms | 150ms |
-| 5/5   | 7.96k rps  | 52ms |  81ms |
-| 18/18 | 8.6k rps   | 40ms | 55ms  |
-| 90/90 | 8.4k rps   | 41ms | 57ms  |
+| Pool                  | Throughput | p95   | p99   |
+|-----------------------|------------|-------|-------|
+| 2/unlimited (untuned) | 752 rps    | 721ms | 957ms |
+| 1/1                   | 4.5k rps   | 96ms  | 150ms |
+| 5/5                   | 7.96k rps  | 52ms  | 81ms  |
+| 18/18                 | 8.6k rps   | 40ms  | 55ms  |
+| 90/90                 | 8.4k rps   | 41ms  | 57ms  |
+
+Pool format: (Idle, Open)
 
 The reason of 18/18 pool has better rps and latency than 90/90 is because the bottleneck no longer the database connection. The bottleneck has been changed into Bcrypt, so throughput now highly relative of cpu state.
 ![tuned.png](../assets/cpu_tuned_dbconn.png)
