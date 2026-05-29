@@ -4,7 +4,7 @@
 
 ### Request
 
-Headers: None
+Headers: `Authorization: Bearer <access_token>`
 
 | Query Parameter | Type   | Required | Constraints          |
 | --------------- | ------ | -------- | -------------------- |
@@ -82,7 +82,7 @@ Returned plans may vary depending on regional coverage availability.
 
 ### Request
 
-Headers: None
+Headers: `Authorization: Bearer <access_token>`
 
 | Parameter | Type   | Required | Constraints   |
 | --------- | ------ | -------- | ------------- |
