@@ -5,9 +5,9 @@ erDiagram
     USER
     USER {
         uuid id PK
-        string email UK
-        string username
-        string password "Hashed"
+        varchar email UK
+        varchar username
+        varchar password "Hashed"
         timestamp created_at
         timestamp updated_at
     }
