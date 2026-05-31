@@ -74,3 +74,6 @@ Headers:
   "message": "Internal Server Error."
 }
 ```
+
+## Note:
+- Success won't return plan details. To get a plan details, please refer to [this endpoint](https://github.com/Highload-Labs/healthcare-gov-docs/blob/main/api/plans.md#get-plansid).
